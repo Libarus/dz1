@@ -1,4 +1,6 @@
-@include "fonts.css"
+body{
+  font-family: "open_sansregular", sans-serif;
+}
 
 .head {
   background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
@@ -15,7 +17,6 @@
 
 .head span {
   font-size: 20px;
-  font-family: "OpenSans";
   color: rgb(208, 152, 44);
   line-height: 1.1;
   text-align: left;
