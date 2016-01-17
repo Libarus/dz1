@@ -1,0 +1,23 @@
+{
+  "name": "dz1.1btn.ru",
+  "authors": [
+    "Anton Zabelin <libarus@gmail.com>"
+  ],
+  "description": "Site for worklow 1",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower"
+  ],
+  "dependencies": {
+    "jquery": "1.8",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
