@@ -1,0 +1,80 @@
+
+.abil{
+    height: 21px;
+    background-image: url(../images/abil_02.png);
+    font-size: 0.7em;
+    font-family: "open_sansbold", sans-serif;
+    color: #1e7465;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.abil:before{
+    background-image: url('../images/abil_01.png');
+    content: " ";
+    height: 21px;
+    width: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.abil:after{
+    background-image: url('../images/abil_03.png');
+    content: " ";
+    height: 21px;
+    width: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fotoblock{
+    float: left;
+    width: 200px;
+    padding-left: 41px;
+    padding-top: 39px;
+    box-sizing: border-box;
+}
+.fotoblock .photo{
+    width: 131px;
+    height: 133px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #f5f4f3;
+    box-shadow: 0px 0px 0px 1px #cfcecd;
+
+
+}
+.fotoblock .photo img{
+    width: 100%;
+}
+
+.abilities{
+    float: right;
+    width: 402px;
+    padding-right: 20px;
+    padding-top: 24px;
+    font-family: "open_sansbold", sans-serif;
+    font-size: 0.85em;
+    color: #727070;
+    line-height: 0.9em;
+}
+.abilities span{
+    font-family: "open_sansregular", sans-serif;
+}
+.abilities ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.abilities ul li{
+    margin-top: 13px;
+}
+
+.abilities ul li.keyAbility{
+    margin-top: 24px;
+}
+.abilities .keyAbilityBlock{
+    float: right;
+    width: 257px;
+}

@@ -12,38 +12,123 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <link rel="stylesheet" href="/app/bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="/app/css/bundle.min.css">
+    <link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="app/css/fonts.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <link rel="stylesheet" href="app/css/index.css">
 </head>
 <body>
-    
-<div id="pagewrap">
-    <header id="header">
-        <hgroup>
-            <h1 id="site-logo">Demo</h1>
-            <h2 id="site-description">Site Description</h2>
-        </hgroup>
-        <nav>
-            <ul id="main-nav">
+
+<div class="main">
+
+<header class="header">
+    <div class="wrap clearfix">
+
+        <div class="logo">
+            <a href="/">
+                <img src="app/images/logo.png" alt="Сайт Забелина Антона">
+            </a>
+        </div>
+
+        <div class="social">
+            <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="" class="fb">Facebook</a>
+                    <a href="" class="vk">Вконтакте</a>
+                    <a href="" class="tw">Twitter</a>
+                    <a href="" class="gh">GitHub</a>
                 </li>
             </ul>
-        </nav>
-        <form id="searchform">
-            <input type="search"></form>
-    </header>
-    <div id="content">
-        <article class="post">blog post</article>
+        </div>
+
     </div>
-    <aside id="sidebar">
-        <section class="widget">widget</section>
+</header>
+
+<div class="wrapper clearfix">
+    <nav class="nav">
+        <ul>
+            <li><a href="/about" class="active">Обо мне</a></li>
+            <li><a href="/mywork">Мои Работы</a></li>
+            <li><a href="/feedback">Обратная связь</a></li>
+        </ul>
+    </nav>
+    <section class="section">
+        
+        <div class="block">
+            <h1><span>Основная информация</span></h1>
+            <div class="telo clearfix">
+                
+                <div class="fotoblock">
+                    <div class="photo">
+                        <img src="/app/images/i.jpg" alt="Антон Забелин">
+                    </div>
+                </div>
+
+                <div class="abilities">
+                    <ul>
+                        <li>Меня зовут: <span>Антон Забелин</span></li>
+                        <li>Мой возраст: <span>36 лет</span></li>
+                        <li>Мой город: <span>Москва, Россия</span></li>
+                        <li>Моя специализация: <span>BACKEND разработчик</span></li>
+                        <li class="keyAbility">Ключевые навыки: 
+                            <div class="keyAbilityBlock">
+                                <span class="abil">html/html5</span>
+                                <span class="abil">css/css3</span>
+                                <span class="abil">javascript</span>
+                                <span class="abil">jquery</span>
+                                <span class="abil">php</span>
+                                <span class="abil">mysql</span>
+                                <span class="abil">photoshop</span>
+                                <span class="abil">c#</span>
+                                <span class="abil">asp.net mvc</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="block">
+            <h1><span>Опыт работы</span></h1>
+            <div class="telo clearfix">
+                
+                Text
+
+            </div>
+        </div>
+
+        <div class="block">
+            <h1><span>Образование</span></h1>
+            <div class="telo clearfix">
+                
+                Text
+
+            </div>
+        </div>
+
+    </section>
+
+    <aside class="aside">
+        <div class="hdr_contacts"><span>Контакты</span></div>
+        <ul>
+            <li><a href="">email</a></li>
+            <li><a href="">phone</a></li>
+            <li><a href="">skype</a></li>
+        </ul>
     </aside>
-    <footer id="footer">footer</footer>
 </div>
 
-<script src="/app/bower/jquery/jquery.js"></script>
-<script src="/app/js/main.js"></script>
-<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <div class="hFooter"></div>
+</div>
+
+<footer class="footer">
+    123
+</footer>
+
+<script src="app/bower/jquery/jquery.js"></script>
+<script src="app/js/main.js"></script>
+<!--[if lt IE 9]> <script src="app/bower/html5shiv/dist/html5shiv.js"></script> <![endif]-->
 </body>
 </html>
