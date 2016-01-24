@@ -110,6 +110,7 @@ html,body
 }
 
 .nav{
+    /*display: none;*/
     width: 250px;
     background-color: rgba(255,0,0,0.06);
     float: left;
@@ -141,7 +142,6 @@ html,body
     background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-    width: 248px;
     height: 56px;
 }
 .nav ul li a.active{
@@ -182,7 +182,6 @@ html,body
     background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
     background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    width: 248px;
     height: 41px;
     z-index: 54;
     padding: 9px 0px 0px 26px;
@@ -192,14 +191,106 @@ html,body
 
 .hdr_contacts span{
     font-family: "open_sansbold", sans-serif;
-    font-size: 1.25em;
+    font-size: 1.21em;
     color: rgb(208, 152, 44);
-    line-height: 1.1;
+    line-height: 1.2;
     text-align: left;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
     width: 95px;
     height: 17px;
 }
+
+.contacts ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.contacts ul li a{
+    display: block;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 213, 211);
+    height: 36px;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+
+.contacts ul li a:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+
+
+.contacts ul li:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
+
+.contacts ul li span{
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 97px;
+    height: 36px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    background-position: 48px 0px;
+    display: block;
+}
+
+.contacts ul li a,
+.contacts ul li{
+    font-family: "open_sansregular", sans-serif;
+    font-size: 0.875em;
+    color: #727070;
+}
+.contacts ul li a{
+    font-size: 1em;
+}
+
+.contacts ul li.email:before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 12px;
+    background-position: 0 -116px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 18px;
+    margin-top: 13px;
+}
+
+.contacts ul li.phone:before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 21px;
+    background-position: 0 -147px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 19px;
+    margin-top: 9px;
+}
+
+.contacts ul li.skype:before{
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-position: 0 -128px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 19px;
+    margin-top: 10px;
+}
+
+
 
 .block{
     margin-bottom: 36px;
