@@ -4,7 +4,6 @@ body {
     background-image: url("../images/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
 }
 
 
@@ -25,8 +24,31 @@ html,body
     background-color: #f8f8f8;
     height: 60px; /* высота подвала */
     margin-top: -60px; /* делаем отрицательный отступ по высоте равный высоте подвала, чтобы четко вписаться в размер экрана */
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.75em;
+    color: #727070;
 }
-
+.footer .wrap{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.footer .login{
+    padding-left: 170px;
+    position: absolute;
+    font-family: "open_sansbold", sans-serif;
+    font-size: 1.2em;
+    color: #727070;
+}
+.footer .login:after{
+    content: '';
+    float: left;
+    background-image: url(../images/locked.png);
+    background-position: 0px 0px;
+    width: 23px;
+    height: 21px; /*42px;*/
+}
 
 
 .clearfix:before,
@@ -321,5 +343,8 @@ html,body
     background-color: #f3f2f1;
     border: 1px solid #c6c6c6;
     border-radius: 0px 0px 5px 5px;
-    padding-bottom: 40px;
+    padding-bottom: 31px;
 }
+
+
+
