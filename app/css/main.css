@@ -90,6 +90,10 @@ html,body
     float:left;
 }
 
+h1.logo{
+    margin: 0px;
+}
+
 .social{
     padding-top: 10px;
     float:right;

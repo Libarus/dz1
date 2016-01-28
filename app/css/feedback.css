@@ -1,0 +1,134 @@
+.form{
+    padding: 31px 122px;
+}
+
+.form * {
+    color: #727070;
+    font-family: "open_sansreguar", sans-serif;
+}
+
+.form label{
+    font-size: 0.875em;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 0.75em;
+    padding: 12px 10px;
+    margin-top: 8px;
+
+    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.form textarea{
+    height: 180px;
+}
+
+.formblock{
+    margin-bottom: 18px;
+}
+
+.contacts_name,
+.contacts_email,
+.capcha,
+.inputCapcha
+{
+    width:50%;
+    box-sizing: border-box;
+}
+
+.contacts_name{
+    float: left;
+    padding-right: 10px;
+}
+
+.contacts_email{
+    float: right;
+    padding-left: 10px;
+}
+
+.imgCapcha{
+    margin-top: 8px;
+    height: 70px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.capcha{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.inputCapcha{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+a.clearBtn,
+a.sendBtn{
+    display: block;
+    border-radius: 5px;
+    width: 121px;
+    height: 37px;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a.sendBtn{
+    margin: 0 auto;
+    background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+a.sendBtn span{
+    font-size: 0.875em;
+    font-family: "open_sansbold", sans-serif;
+    color: rgb(30, 116, 101);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+a:hover.sendBtn {
+    background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+
+a.clearBtn{
+    margin: 0 auto;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+a.clearBtn span{
+    font-size: 0.875em;
+    font-family: "open_sansbold", sans-serif;
+    color: rgb(114, 112, 112);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+a:hover.clearBtn{
+    background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+
+.leftBtn{
+    width: 50%;
+    float: left;
+}
+.rightBtn{
+    width: 50%;
+    float: right;
+}

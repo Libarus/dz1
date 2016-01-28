@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="app/css/fonts.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <link rel="stylesheet" href="app/css/mywork.css">
+    <link rel="stylesheet" href="app/css/feedback.css">
     <link rel="stylesheet" href="app/css/icons.css">
 </head>
 <body>
@@ -49,54 +49,50 @@
     <nav class="nav">
         <ul>
             <li><a href="index.html">Обо мне</a></li>
-            <li><a href="mywork.html" class="active">Мои Работы</a></li>
-            <li><a href="feedback.html">Обратная связь</a></li>
+            <li><a href="mywork.html">Мои Работы</a></li>
+            <li><a href="feedback.html" class="active">Обратная связь</a></li>
         </ul>
     </nav>
     <section class="section">
         
         <div class="block">
-            <h1><span>Мои работы</span></h1>
+            <h1><span>У Вас интересный проект? Напишите мне!</span></h1>
             <div class="telo clearfix">
-                
-                <div class="mywork">
-                    
-                    <div class="work">
 
-                        <div class="item">
-                            <div class="imgblock">
-                                <img src="/userfiles/mywork/manerom_ru.jpg" alt="Manerom.ru">
+                <div class="form">
+                    <form action="">
+                        <div class="formblock clearfix">
+                            <div class="contacts_name">
+                                <label for="">Имя</label>
+                                <input type="text" name="name" id="name" value="" placeholder="Как к Вам обращаться?">
                             </div>
-                            <a href="http://manerom.ru" target="_blank" class="link">manerom.ru</a>
-                            <div class="descr">"Особымъ Манеромъ" - пекарня</div>
-                        </div>
-                    
-                    </div><div class="work">
-                    
-                        <div class="item">
-                            <div class="imgblock">
-                                <img src="/userfiles/mywork/4tea_ru.jpg" alt="4-tea.ru">
+                            <div class="contacts_email">
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" id="email" value="" placeholder="Куда мне писать?">
                             </div>
-                            <a href="http://4-tea.ru" target="_blank" class="link">4-tea.ru</a>
-                            <div class="descr">Магазин 4 чая</div>
                         </div>
-                    
-                    </div><div class="work">
-
-                        <div class="item">
-                            <div class="imgblock">
-                                <img src="/userfiles/mywork/casa-pelle_ru.jpg" alt="casa-pelle.ru">
+                        <div class="formblock clearfix">
+                            <label for="message">Сообщение</label>
+                            <textarea name="message" id="message" cols="10" rows="5" placeholder="Кратко, в чём суть"></textarea>
+                        </div>
+                        <div class="formblock clearfix">
+                            <label for="capcha">Введите код, указанный на картинке</label>
+                            <div class="capcha">
+                                <div class="imgCapcha"></div>
+                            </div><div class="inputCapcha">
+                                <input type="text" name="capcha" id="capcha" value="" placeholder="Введите код">
                             </div>
-                            <a href="http://casa-pelle.ru" target="_blank" class="link">casa-pelle.ru</a>
-                            <div class="descr">Дом Итальянской кожи</div>
                         </div>
-                    
-                    </div><div class="work addproject">
-                    <a href="" class="addnew"><span>Добавить проект</span></a>
-                    </div>
-
-                </div><!-- <div class="mywork"> -->
-                
+                        <div class="formblock clearfix">
+                            <div class="leftBtn">
+                                <a href="" class="sendBtn"><span>Отправить</span></a>
+                            </div>
+                            <div class="rightBtn">
+                                <a href="" class="clearBtn"><span>Очистить</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
             </div>
         </div>
