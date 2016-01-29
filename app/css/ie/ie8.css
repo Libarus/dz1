@@ -1,0 +1,38 @@
+body{
+    background-position: center;
+}
+
+.hdr_contacts{
+    background-image: url(../../images/ie8/contact_header.png);
+}
+
+.contacts ul li a{
+    background-image: url(../../images/ie8/contacts.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+}
+.contacts ul li a:hover{
+    background-position: 0px -36px;
+}
+
+.nav ul li{
+    background-image: url(../../images/ie8/nav.png);
+    background-repeat: repeat-x;
+    background-position: 0px -112px;
+}
+.nav ul li a.active{
+    background-image: url(../../images/ie8/nav.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+}
+
+.nav ul li a:hover{
+    background-image: url(../../images/ie8/nav.png);
+    background-repeat: repeat-x;
+    background-position: 0px -56px;
+}
+
+.block h1{
+    background-image: url(../../images/ie8/block.png);
+    background-repeat: repeat-x;
+}

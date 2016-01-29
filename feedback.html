@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="app/css/main.css">
     <link rel="stylesheet" href="app/css/feedback.css">
     <link rel="stylesheet" href="app/css/icons.css">
+
+    <!--[if lt IE 9]> <link rel="stylesheet" href="app/css/ie/ie8.css"> <![endif]-->
 </head>
 <body>
 
 <div class="main">
 
-<header class="header">
+<div class="header">
     <div class="wrap clearfix">
 
         <h1 class="logo">
@@ -43,17 +45,17 @@
         </div>
 
     </div>
-</header>
+</div>
 
 <div class="wrapper clearfix">
-    <nav class="nav">
+    <div class="nav">
         <ul>
             <li><a href="index.html">Обо мне</a></li>
             <li><a href="mywork.html">Мои Работы</a></li>
             <li><a href="feedback.html" class="active">Обратная связь</a></li>
         </ul>
-    </nav>
-    <section class="section">
+    </div>
+    <div class="section">
         
         <div class="block">
             <h1><span>У Вас интересный проект? Напишите мне!</span></h1>
@@ -97,30 +99,31 @@
             </div>
         </div>
 
-    </section>
+    </div>
 
-    <aside class="aside contacts">
+    <div class="aside contacts">
         <div class="hdr_contacts"><span>Контакты</span></div>
         <ul>
             <li class="email"><a href="mailto:aazab@ya.ru"><span>aazab@ya.ru</span></a></li>
             <li class="phone"><a><span>+7 985 365-8813</span></a></li>
             <li class="skype"><a><span>libaruss</span></a></li>
         </ul>
-    </aside>
+    </div>
 </div>
 
     <div class="hFooter"></div>
 </div>
 
-<footer class="footer">
+<div class="footer">
     <div class="wrap">
         <div class="login">вход</div>
         &copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
     </div>
-</footer>
+</div>
 
 <script src="app/bower/jquery/jquery.js"></script>
+<!--[if lt IE 10]> <script src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script src="app/js/main.js"></script>
-<!--[if lt IE 9]> <script src="app/bower/html5shiv/dist/html5shiv.js"></script> <![endif]-->
+ <![endif]-->
 </body>
 </html>
