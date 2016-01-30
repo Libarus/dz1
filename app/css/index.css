@@ -36,10 +36,12 @@
 .fotoblock .photo{
     width: 153px;
     height: 153px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     overflow: hidden;
     border: 10px solid #f5f4f3;
-    box-shadow: 0px 0px 0px 1px #cfcecd;
+    -webkit-box-shadow: 0px 0px 0px 1px #cfcecd;
+            box-shadow: 0px 0px 0px 1px #cfcecd;
 
 
 }
@@ -99,12 +101,14 @@
     background-repeat: no-repeat;
     background-position: 0px center;
     vertical-align: middle;
-    box-shadow: 0px -1px 0px 0px #dbdbda;
+    -webkit-box-shadow: 0px -1px 0px 0px #dbdbda;
+            box-shadow: 0px -1px 0px 0px #dbdbda;
     border-top: 1px solid #edeceb;
 }
 .graduation_item:first-child{
     border: 0px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .graduation_block{

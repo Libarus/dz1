@@ -16,15 +16,15 @@
 .form textarea{
     width: 100%;
     border: 1px solid #dddddd;
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     font-size: 0.75em;
     padding: 12px 10px;
     margin-top: 8px;
-
-    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+            box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 }
 .form textarea{
     height: 180px;
@@ -57,7 +57,8 @@
     margin-top: 8px;
     height: 70px;
     border: 1px solid #dddddd;
-    border-radius: 6px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
     background-color: white;
 }
 
@@ -77,7 +78,8 @@
 .submit_button{
     border:0px;
     display: block;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     width: 121px;
     height: 37px;
     text-align: center;
@@ -87,10 +89,10 @@
 .submit_button{
     background-color: #69d6b7;
     margin: 0 auto;
-    background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
-    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
     font-size: 0.875em;
     font-family: "open_sansbold", sans-serif;
     color: rgb(30, 116, 101);
@@ -99,19 +101,19 @@
 }
 .submit_button:hover {
     background-color: #44b196;
-    background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 }
 
 .reset_button{
     background-color: #edebe9;
     margin: 0 auto;
-    background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+            box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
     font-size: 0.875em;
     font-family: "open_sansbold", sans-serif;
     color: rgb(114, 112, 112);
@@ -120,10 +122,10 @@
 }
 .reset_button:hover{
     background-color: #cac8c8;
-    background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+    -webkit-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+            box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 
 .left_button{

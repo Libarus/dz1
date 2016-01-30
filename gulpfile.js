@@ -8,10 +8,7 @@ var gulp = require("gulp")
 
 gulp.task('default', function() {
     gulp.src('./app_dev/css/*.css')
-        //.pipe(concatCSS('bundle.css'))
         .pipe(prefix('last 25 versions'))
-        //.pipe(minifyCSS())
-        //.pipe(rename('bundle.min.css'))
         .pipe(gulp.dest('./app/css/'));
 });
 
