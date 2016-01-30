@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="app/css/main.css">
     <link rel="stylesheet" href="app/css/index.css">
     <link rel="stylesheet" href="app/css/icons.css">
+
+    <!--[if lt IE 9]> <link rel="stylesheet" href="app/css/ie/ie8.css"> <![endif]-->
 </head>
 <body>
 
 <div class="main">
 
-<header class="header">
+<div class="header">
     <div class="wrap clearfix">
 
         <div class="logo">
@@ -43,17 +45,17 @@
         </div>
 
     </div>
-</header>
+</div>
 
 <div class="wrapper clearfix">
-    <nav class="nav">
+    <div class="nav">
         <ul>
             <li><a href="index.html" class="active">Обо мне</a></li>
             <li><a href="mywork.html">Мои Работы</a></li>
             <li><a href="feedback.html">Обратная связь</a></li>
         </ul>
-    </nav>
-    <section class="section">
+    </div>
+    <div class="section">
         
         <div class="block">
             <h1><span>Основная информация</span></h1>
@@ -61,7 +63,7 @@
                 
                 <div class="fotoblock">
                     <div class="photo">
-                        <img src="/app/images/i.jpg" alt="Антон Забелин">
+                        <img src="app/images/i.jpg" alt="Антон Забелин">
                     </div>
                 </div>
 
@@ -100,16 +102,24 @@
                 
                 <ul class="circle">
                     <li class="briefcase">
-                        <div class="company">"ИП Боровицкий" - Продавец дисков</div>
-                        <div class="period">Сентябрь 2005 - Август 2008</div>
+                        <div class="company">Проектная ПРАКТИКА, группа компаний</div>
+                        <div class="period">Сентябрь 2012 — по настоящее время</div>
                     </li>
                     <li class="briefcase">
-                        <div class="company">"ООО Системы безопастности" - Системный администратор</div>
-                        <div class="period">Сентябрь 2005 - Август 2008</div>
+                        <div class="company">ОАО "Детский Мир"</div>
+                        <div class="period">Октябрь 2010 — август 2012</div>
                     </li>
                     <li class="briefcase">
-                        <div class="company">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle Web Center</div>
-                        <div class="period">Сентябрь 2005 - Август 2008</div>
+                        <div class="company">Домодедово. Московский аэропорт</div>
+                        <div class="period">Февраль 2010 — октябрь 2010</div>
+                    </li>
+                    <li class="briefcase">
+                        <div class="company">ЗАО "Национальная регистрационная компания"</div>
+                        <div class="period">Январь 2007 — декабрь 2009</div>
+                    </li>
+                    <li class="briefcase">
+                        <div class="company">Вооруженные Силы Российской Федерации</div>
+                        <div class="period">Ноябрь 2004 — ноябрь 2006</div>
                     </li>
                 </ul>
 
@@ -121,51 +131,49 @@
             <div class="telo clearfix">
                 
                 <ul class="circle">
-                    <li class="school">
-                        <div class="company">Среднее образование</div>
-                        <div class="period">1985 - 1994</div>
-                    </li>
-                    <li class="school">
-                        <div class="company">Средне-техническое</div>
-                        <div class="period">1994 - 1998</div>
+                    <li class="file">
+                        <div class="company">Курсы LoftSchool.ru</div>
+                        <div class="period">Январь 2016 - по настоящее время</div>
                     </li>
                     <li class="graduate">
                         <div class="company">Московский Государственный Университет Путей Сообщения (МИИТ)</div>
                         <div class="period">1998 - 2003</div>
                     </li>
-                    <li class="file">
-                        <div class="company">Курсы LoftSchool.ru</div>
-                        <div class="period">Январь 2016 - по настоящее время</div>
+                    <li class="school">
+                        <div class="company">Средне-техническое образование</div>
+                        <div class="period">1994 - 1998</div>
+                    </li>
+                    <li class="school">
+                        <div class="company">Среднее образование</div>
+                        <div class="period">1985 - 1994</div>
                     </li>
                 </ul>
 
             </div>
         </div>
 
-    </section>
+    </div>
 
-    <aside class="aside contacts">
+    <div class="aside contacts">
         <div class="hdr_contacts"><span>Контакты</span></div>
         <ul>
             <li class="email"><a href="mailto:aazab@ya.ru"><span>aazab@ya.ru</span></a></li>
             <li class="phone"><a><span>+7 985 365-8813</span></a></li>
             <li class="skype"><a><span>libaruss</span></a></li>
         </ul>
-    </aside>
+    </div>
 </div>
 
     <div class="hFooter"></div>
 </div>
 
-<footer class="footer">
+<div class="footer">
     <div class="wrap">
         <div class="login">вход</div>
         &copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
     </div>
-</footer>
+</div>
 
 <script src="app/bower/jquery/jquery.js"></script>
-<script src="app/js/main.js"></script>
-<!--[if lt IE 9]> <script src="app/bower/html5shiv/dist/html5shiv.js"></script> <![endif]-->
 </body>
 </html>
