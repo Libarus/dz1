@@ -58,8 +58,14 @@
     font-size: 0.85em;
     color: #727070;
 }
+.abilities_title{
+    display: table-cell;
+    white-space: nowrap;
+    padding-right: 10px;
+}
 .abilities_text{
     font-family: "open_sansregular", sans-serif;
+    display: table-cell;
 }
 .abilities_ul{
     padding: 0px;
@@ -71,16 +77,17 @@
     margin-top: 6px;
 }
 
+
 .keyAbility{
     margin-top: 16px;
 }
 .keyAbilityTitle{
-    float: left;
-    width: 140px;
+    display: table-cell;
+    white-space: nowrap;
+    padding-right: 10px;
 }
 .keyAbilityBlock{
-    width: 250px;
-    float: right;
+    display: table-cell;
 }
 
 
