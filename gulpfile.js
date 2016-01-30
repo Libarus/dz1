@@ -3,7 +3,7 @@ var gulp = require("gulp")
     ,rename = require('gulp-rename')
     ,prefix = require('gulp-autoprefixer')
     ,minifyCSS = require('gulp-minify-css')
-    // ,sass = require('gulp-sass')
+    ,sass = require('gulp-sass')
     ;
 
 gulp.task('default', function() {

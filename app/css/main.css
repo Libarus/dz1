@@ -4,10 +4,12 @@ body {
     background-image: url("../images/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     padding: 0px;
     margin: 0px;
 }
 
+* { box-sizing: border-box; }
 
 html,body
 {
@@ -39,14 +41,27 @@ html,body
 .footer .login{
     padding-left: 170px;
     position: absolute;
+}
+
+.login_href{
     font-family: "open_sansbold", sans-serif;
     font-size: 1.2em;
     color: #727070;
+    text-decoration: none;
 }
+
+.ikonka{
+    height: 21px;
+}
+
+.login_href:hover .ikonka{
+    background-position: -5px -534px;
+}
+
 .footer .login:after{
     content: '';
     float: left;
-    background-image: url(../images/locked.png);
+    /*background-image: url(../images/locked.png);*/
     background-position: 0px 0px;
     width: 23px;
     height: 21px; /*42px;*/
@@ -72,7 +87,10 @@ html,body
     *zoom: 1;
 }
 
+.hide_h1{ display:none; }
+
 .header {
+    min-width: 1000px;
     height: 90px;
     background-image: url(../images/header_bg.png);
     border-bottom: 7px solid white;
@@ -81,14 +99,16 @@ html,body
 }
 
 .header .wrap{
-    width: 1200px;
+    padding-left: 20px;
+    padding-right: 18px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
 
 .logo{
-    padding-top: 10px;
-    padding-left: 9px;
+    padding-top: 2px;
+    padding-left: 10px;
     float:left;
 }
 
@@ -97,7 +117,7 @@ h1.logo{
 }
 
 .social{
-    padding-top: 10px;
+    padding-top: 2px;
     float:right;
 }
 
@@ -132,8 +152,8 @@ h1.logo{
 .social a:hover.gh{ background-position: -114px -40px; }
 
 .wrapper{
-    padding-top: 35px;
-    width: 960px;
+    width: 1000px;
+    padding: 35px 20px 0;
     margin: 0 auto;
 }
 
@@ -141,16 +161,15 @@ h1.logo{
     /*display: none;*/
     width: 250px;
     background-color: rgba(255,0,0,0.06);
-    float: left;
     margin-bottom: 35px;
 }
-.nav ul{
+.nav_items{
     padding: 0px;
     margin: 0px;
     list-style: none;
 }
 
-.nav ul li a{
+.nav_href{
     font-family: "open_sansbold", sans-serif;
     text-decoration: none;
     font-size: 1.21em;
@@ -165,33 +184,36 @@ h1.logo{
     padding-left: 28px;
 }
 
-.nav ul li{
+.nav_item{
+    background-color: #f2f0f0;
     background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
     height: 56px;
 }
-.nav ul li a.active{
+.nav_active{
+    background-color: #5fd0b4;
     background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 }
 
-.nav ul li a:hover{
+.nav_href:hover{
+    background-color: #d7d5d5;
     background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 
-.nav ul li:first-child,
-.nav ul li:first-child a{
+.nav_item:first-child,
+.nav_item:first-child .nav_href{
     border-radius: 5px 5px 0px 0px;
 }
-.nav ul li:last-child,
-.nav ul li:last-child a{
+.nav_item:last-child,
+.nav_item:last-child .nav_href{
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -205,19 +227,19 @@ h1.logo{
     float: right;
 }
 
-.hdr_contacts{
+
+.contact_header{
+    background-color: #eac070;
     background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
     background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
     background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    height: 41px;
-    z-index: 54;
-    padding: 9px 0px 0px 26px;
+    height: 44px;
+    padding: 12px 0px 0px 26px;
     border-radius: 5px 5px 0px 0px;
-    box-sizing: border-box;
 }
 
-.hdr_contacts span{
+.contact_title{
     font-family: "open_sansbold", sans-serif;
     font-size: 1.21em;
     color: rgb(208, 152, 44);
@@ -228,45 +250,59 @@ h1.logo{
     height: 17px;
 }
 
-.contacts ul{
+.contact_list{
     padding: 0px;
     margin: 0px;
     list-style: none;
 }
-.contacts ul li a{
-    display: block;
+
+.contact_href{
+    text-decoration: none;
+    background-color: #f5f4f4;
+    width: 250px;
+    margin-bottom: -5px;
+    display: inline-block;
     background-color: white;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(214, 213, 211);
-    height: 36px;
+    height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 }
 
-.contacts ul li a:hover {
+a:hover.contact_href {
+    background-color: #f1e4cd;
     background-image: -moz-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 }
 
+.ikon_shift_email{ margin-left: 18px; }
+.ikon_shift2_email{ margin-left: 11px; }
+.ikon_shift_telephone{ margin-left: 18px; }
+.ikon_shift2_telephone{ margin-left: 11px; }
+.ikon_shift_skype{ margin-left: 18px; }
+.ikon_shift2_skype{ margin-left: 8px; }
 
-.contacts ul li:last-child{
+li.contact_item:last-child > .contact_href {
     border-radius: 0px 0px 5px 5px;
 }
 
-.contacts ul li span{
-    box-sizing: border-box;
+.contact_text{
     padding-top: 8px;
-    padding-left: 97px;
+    padding-left: 35px;
     height: 36px;
-    background-image: url(../images/icons.png);
-    background-repeat: no-repeat;
-    background-position: 48px 0px;
-    display: block;
+    transition: 0.5s;
+}
+a:hover.contact_href .contact_text{
+    padding-left: 5px;
+    font-family: "open_sansbold", sans-serif;
 }
 
 .contacts ul li a,
@@ -279,39 +315,26 @@ h1.logo{
     font-size: 1em;
 }
 
-.contacts ul li.email:before{
-    content: "";
-    display: block;
-    width: 16px;
-    height: 12px;
-    background-position: 0 -116px;
-    background-image: url(../images/icons.png);
-    background-repeat: no-repeat;
-    float: left;
-    margin-left: 18px;
-    margin-top: 13px;
-}
-
-.contacts ul li.phone:before{
+.contacts ul li.contact_phone:before{
     content: "";
     display: block;
     width: 16px;
     height: 21px;
     background-position: 0 -147px;
-    background-image: url(../images/icons.png);
+    background-image: url(../images/ikonki.png);
     background-repeat: no-repeat;
     float: left;
     margin-left: 19px;
     margin-top: 9px;
 }
 
-.contacts ul li.skype:before{
+.contacts ul li.contact_skype:before{
     content: "";
     display: block;
     width: 19px;
     height: 19px;
     background-position: 0 -128px;
-    background-image: url(../images/icons.png);
+    background-image: url(../images/ikonki.png);
     background-repeat: no-repeat;
     float: left;
     margin-left: 19px;
@@ -323,22 +346,20 @@ h1.logo{
 .block{
     margin-bottom: 36px;
 }
-.block h1{
+.block_title{
     margin: 0px;
     background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-    height: 54px;
+    min-height: 54px;
     border: 1px solid #747474;
     border-radius: 5px 5px 0px 0px;
-    box-sizing: border-box;
-    padding-left: 40px;
-    padding-top: 9px;
+    padding: 9px 40px;
     font-family: "open_sansbold", sans-serif;
     font-size: 1.45em;
 }
-.block h1 span{
+.block_title .text_header{
     color: rgb(238, 237, 236);
     line-height: 0.917;
     text-align: left;

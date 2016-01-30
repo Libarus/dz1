@@ -13,7 +13,6 @@
 
 .addnew{
     padding-top: 25px;
-    box-sizing: border-box;
     border-radius: 5px;
     background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
@@ -58,7 +57,8 @@
 }
 
 .mywork{
-    padding: 38px 9px 30px 42px;
+    padding: 38px 42px;
+    margin-right: -32px;
 }
 
 .work{
@@ -66,12 +66,9 @@
     margin: 0px;
     padding: 0px;
     display: inline-block;
-    box-sizing: border-box;
     padding-right: 32px;
     vertical-align: top;
     margin-bottom: 20px;
-}
-.work:nth-child(3n+3){
 }
 
 .item{
@@ -79,13 +76,43 @@
     border-radius: 6px;
     background-color: white;
 }
-.imgblock{
+.image_block{
     height: 120px;
     overflow: hidden;
 }
-.imgblock img{
+.image_block img{
     width: 100%;
     border-radius: 6px 6px 0px 0px;
+    transition: 0.3s;
+}
+
+a.image_link{
+    display: block;
+    height: 120px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.image_more{
+    border-radius: 6px 6px 0px 0px;
+    display: block;
+    width: 100%;
+    height: 120px;
+    color: black;
+    font-family: "open_sansbold", sans-serif;
+    text-align: center;
+
+    padding-top: 50px;
+    transition: 0.3s;
+}
+a:hover.image_link .image_block{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
+    -moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+    opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9 */
+}
+a:hover.image_link .image_more{
+    margin-top: -120px;
 }
 
 .item a.link{

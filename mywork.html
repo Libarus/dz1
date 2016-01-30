@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=1000; initial-scale=1.0">
 
-    <title>dz1</title>
+    <title>Мои работы</title>
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Персональный сайт Антона Забелина">
+    <meta name="keywords" content="сайт, создание сайта, php, mysql, css, html, javascript">
+    <meta name="author" content="Anton A. Zabelin /aazab@ya.ru/">
 
     <link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="app/css/fonts.css">
     <link rel="stylesheet" href="app/css/main.css">
     <link rel="stylesheet" href="app/css/mywork.css">
-    <link rel="stylesheet" href="app/css/icons.css">
+    <link rel="stylesheet" href="app/css/ikonki.css">
 
     <!--[if lt IE 9]> <link rel="stylesheet" href="app/css/ie/ie8.css"> <![endif]-->
 </head>
@@ -27,19 +27,19 @@
 <div class="header">
     <div class="wrap clearfix">
 
-        <h1 class="logo">
+        <div class="logo">
             <a href="/">
                 <img src="app/images/logo.png" alt="Сайт Забелина Антона">
             </a>
-        </h1>
+        </div>
 
         <div class="social">
             <ul>
                 <li>
-                    <a href="" class="fb">Facebook</a>
-                    <a href="" class="vk">Вконтакте</a>
-                    <a href="" class="tw">Twitter</a>
-                    <a href="" class="gh">GitHub</a>
+                    <a href="https://www.facebook.com/zkont" class="fb" target="_blank">Facebook</a>
+                    <a href="http://vk.com/aazabelin" class="vk" target="_blank">Вконтакте</a>
+                    <a href="http://twitter.com" class="tw" target="_blank">Twitter</a>
+                    <a href="https://github.com/libarus" class="gh" target="_blank">GitHub</a>
                 </li>
             </ul>
         </div>
@@ -48,17 +48,48 @@
 </div>
 
 <div class="wrapper clearfix">
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Обо мне</a></li>
-            <li><a href="mywork.html" class="active">Мои Работы</a></li>
-            <li><a href="feedback.html">Обратная связь</a></li>
-        </ul>
+
+    <div class="aside">
+        <div class="nav">
+            <ul class="nav_items">
+                <li class="nav_item"><a href="index.html" class="nav_href">Обо мне</a></li>
+                <li class="nav_item"><a href="mywork.html" class="nav_href nav_active">Мои Работы</a></li>
+                <li class="nav_item"><a href="feedback.html" class="nav_href">Обратная связь</a></li>
+            </ul>
+        </div>
+
+        <div class="contacts clearfix">
+            <div class="contact_header"><span class="contact_title">Контакты</span></div>
+            <ul class="contact_list">
+                <li class="contact_item">
+                    <a href="mailto:aazab@ya.ru" class="contact_href">
+                        <i class="ikonki ikonki_contacts_email ikon_shift_email"></i>
+                        <i class="ikonki ikonki_arrow ikon_shift2_email"></i>
+                        <span class="contact_text">aazab@ya.ru</span>
+                    </a>
+                </li>
+                <li class="contact_item">
+                    <a href="tel:79853658813" class="contact_href">
+                        <i class="ikonki ikonki_contacts_telephone ikon_shift_telephone"></i>
+                        <i class="ikonki ikonki_arrow ikon_shift2_telephone"></i>
+                        <span class="contact_text">+7 985 365-8813</span>
+                    </a>
+                </li>
+                <li class="contact_item">
+                    <a href="skype:libaruss" class="contact_href">
+                        <i class="ikonki ikonki_contacts_skype ikon_shift_skype"></i>
+                        <i class="ikonki ikonki_arrow ikon_shift2_skype"></i>
+                        <span class="contact_text">libaruss</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
     <div class="section">
         
         <div class="block">
-            <h1><span>Мои работы</span></h1>
+            <h1 class="block_title"><span class="text_header">Мои работы</span></h1>
             <div class="telo clearfix">
                 
                 <div class="mywork">
@@ -66,9 +97,12 @@
                     <div class="work">
 
                         <div class="item">
-                            <div class="imgblock">
-                                <img src="userfiles/mywork/manerom_ru.jpg" alt="Manerom.ru">
-                            </div>
+                            <a href="http://manerom.ru" class="image_link" target="_blank">
+                                <div class="image_block">
+                                    <img src="userfiles/mywork/manerom_ru.jpg" alt="Manerom.ru">
+                                </div>
+                                <div class="image_more">подробнее</div>
+                            </a>
                             <a href="http://manerom.ru" target="_blank" class="link">manerom.ru</a>
                             <div class="descr">"Особымъ Манеромъ" - пекарня</div>
                         </div>
@@ -76,9 +110,12 @@
                     </div><div class="work">
                     
                         <div class="item">
-                            <div class="imgblock">
-                                <img src="userfiles/mywork/4tea_ru.jpg" alt="4-tea.ru">
-                            </div>
+                            <a href="http://4-tea.ru" class="image_link" target="_blank">
+                                <div class="image_block">
+                                    <img src="userfiles/mywork/4tea_ru.jpg" alt="4-tea.ru">
+                                </div>
+                                <div class="image_more">подробнее</div>
+                            </a>
                             <a href="http://4-tea.ru" target="_blank" class="link">4-tea.ru</a>
                             <div class="descr">Магазин 4 чая</div>
                         </div>
@@ -86,9 +123,12 @@
                     </div><div class="work">
 
                         <div class="item">
-                            <div class="imgblock">
-                                <img src="userfiles/mywork/casa-pelle_ru.jpg" alt="casa-pelle.ru">
-                            </div>
+                            <a href="http://4-tea.ru" class="image_link" target="_blank">
+                                <div class="image_block">
+                                    <img src="userfiles/mywork/casa-pelle_ru.jpg" alt="casa-pelle.ru">
+                                </div>
+                                <div class="image_more">подробнее</div>
+                            </a>
                             <a href="http://casa-pelle.ru" target="_blank" class="link">casa-pelle.ru</a>
                             <div class="descr">Дом Итальянской кожи</div>
                         </div>
@@ -105,14 +145,6 @@
 
     </div>
 
-    <div class="aside contacts">
-        <div class="hdr_contacts"><span>Контакты</span></div>
-        <ul>
-            <li class="email"><a href="mailto:aazab@ya.ru"><span>aazab@ya.ru</span></a></li>
-            <li class="phone"><a><span>+7 985 365-8813</span></a></li>
-            <li class="skype"><a><span>libaruss</span></a></li>
-        </ul>
-    </div>
 </div>
 
     <div class="hFooter"></div>
