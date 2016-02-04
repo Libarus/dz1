@@ -36,12 +36,10 @@
 .fotoblock .photo{
     width: 153px;
     height: 153px;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     overflow: hidden;
     border: 10px solid #f5f4f3;
-    -webkit-box-shadow: 0px 0px 0px 1px #cfcecd;
-            box-shadow: 0px 0px 0px 1px #cfcecd;
+    box-shadow: 0px 0px 0px 1px #cfcecd;
 
 
 }
@@ -58,22 +56,22 @@
     font-size: 0.85em;
     color: #727070;
 }
-.abilities_title{
+.abilities-title{
     display: table-cell;
     white-space: nowrap;
     padding-right: 10px;
 }
-.abilities_text{
+.abilities-text{
     font-family: "open_sansregular", sans-serif;
     display: table-cell;
 }
-.abilities_ul{
+.abilities-ul{
     padding: 0px;
     margin: 0px;
     list-style: none;
 }
 
-.abilities_li{
+.abilities-li{
     margin-top: 6px;
 }
 
@@ -101,30 +99,28 @@
     font-size: 0.96em;
     color: #727070;
 }
-.graduation_item{
+.graduation-item{
     padding-top: 30px;
     padding-bottom: 30px;
 
     background-repeat: no-repeat;
     background-position: 0px center;
     vertical-align: middle;
-    -webkit-box-shadow: 0px -1px 0px 0px #dbdbda;
-            box-shadow: 0px -1px 0px 0px #dbdbda;
+    box-shadow: 0px -1px 0px 0px #dbdbda;
     border-top: 1px solid #edeceb;
 }
-.graduation_item:first-child{
+.graduation-item:first-child{
     border: 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
-.graduation_block{
+.graduation-block{
     width: 500px;
     vertical-align: middle;
     display: inline-block;
     padding-left: 39px;
 }
 
-.graduation_period{
+.graduation-period{
     font-size: 0.94em;
 }

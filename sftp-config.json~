@@ -16,7 +16,7 @@
     
     "host": "1btn.ru",
     "user": "btn",
-    "password": "HbBato1Y",
+    //"password": "**********",
     //"port": "22",
     
     "remote_path": "/www/dz1.1btn.ru/",
