@@ -16,13 +16,17 @@
     display: none;
 }
 
-.popup-addmywork{
-    top: 50%;
-    left: 50%;
-    min-width: 360px;
-    height: 500px;
-    margin-left: -180px;
-    margin-top: -250px;
-    border-radius: 0px;
-    background-color: #eeeeee;
+.close-popup-button{
+    padding-top: 8px;
+    padding-right: 17px;
+    margin-bottom: -8px;
+}
+
+.close-popup-href{
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/x.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
 }

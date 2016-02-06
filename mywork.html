@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="app/css/main.css">
     <link rel="stylesheet" href="app/css/mywork.css">
     <link rel="stylesheet" href="app/css/ikonki.css">
+    <link rel="stylesheet" href="app/css/popupmywork.css">
 
     <link rel="stylesheet" href="app/moduls/popup/css/popup.css">
 
@@ -25,7 +26,70 @@
 <body>
 
 <div id="add-my-work" class="popup-window popup-addmywork">
-Добавление проекта
+    <div class="up-text">Добавление проекта</div>
+    <div class="amw-bg">
+        <div class="close-popup-button clearfix"><a href="#" class="close-popup-href"></a></div>
+        <form action="" class="form-block" id="form-send-mywork">
+            
+            <div class="form-item clearfix">
+                
+                <label for="name" class="form-label">Название проекта</label>
+                <div class="form-input">
+                    <input type="text" name="name" id="name" class="form-input-item" placeholder="Введите название">
+                </div>
+                <div class="form-error-label">
+                    введите название
+                </div>
+
+            </div>
+
+            <div class="form-item clearfix">
+                
+                <label for="imagename" class="form-label">Картинка проекта</label>
+                <div class="form-input">
+                    <label for="image" class="form-input-file-label">
+                    <input type="file" name="image" id="image" class="form-input-file">
+                    <div class="form-input-item-fictiv">Загрузите изображение</div>
+                    <div class="cloud-download"></div>
+                    </label>
+                </div>
+                <div class="form-error-label">
+                    изображение
+                </div>
+
+            </div>
+
+            <div class="form-item clearfix">
+                
+                <label for="url" class="form-label">URL проекта</label>
+                <div class="form-input">
+                    <input type="text" name="url" id="url" class="form-input-item" placeholder="Добавьте ссылку">
+                </div>
+                <div class="form-error-label">
+                    ссылка на проект
+                </div>
+
+            </div>
+
+            <div class="form-item clearfix form-item-textarea">
+                
+                <label for="descrip" class="form-label">Описание</label>
+                <div class="form-input">
+                    <textarea rows="5" cols="10" name="descrip" id="descrip" class="form-input-item form-input-item-textarea" placeholder="Пара слов о вашем проекте"></textarea>
+                </div>
+                <div class="form-error-label">
+                    описание проекта
+                </div>
+
+            </div>
+
+            <div class="submit-control">
+                <button type="submit" class="submit-button">Добавить</button>
+            </div>
+
+        </form>
+
+    </div>
 </div>
 
 <div class="main">
@@ -129,7 +193,7 @@
                     </div><div class="work">
 
                         <div class="item">
-                            <a href="http://4-tea.ru" class="image-link" target="-blank">
+                            <a href="http://casa-pelle.ru" class="image-link" target="-blank">
                                 <div class="image-block">
                                     <img src="userfiles/mywork/casa-pelle_ru.jpg" alt="casa-pelle.ru">
                                 </div>
@@ -164,5 +228,7 @@
 
 <script src="app/bower/jquery/jquery.js"></script>
 <script src="app/moduls/popup/js/popup.js"></script>
+<script src="app/moduls/formvalidate/js/formvalidate.js"></script>
+<script src="app/js/mywork.js"></script>
 </body>
 </html>

@@ -6,17 +6,13 @@
     var currentOpen;
 
     function OpenPopup(winName){
-        var shift = $("#" + winName).css("top") + $(window).scrollTop();
-        console.log(shift);
         currentOpen = winName;
         $("#popupoverlay").show();
-        $("#" + winName).css("top",shift);
-        $("#" + winName).show(500);
-        //$("body").css({ overflow:"hidden" });
+        $("#" + winName).show(300);
     }
 
     function ClosePopup(){
-        $("#" + currentOpen).hide();
+        $("#" + currentOpen).hide(300);
         $("#popupoverlay").hide();
     }
 
@@ -28,7 +24,6 @@
     $("a.popup-open").each(function () {
         
         var winName = $(this).attr("winname");
-        console.log(winName);
         $(this).on('click',function () {
             OpenPopup(winName);
             return false;
@@ -36,4 +31,13 @@
 
     });
 
+    $("a.close-popup-href").on('click',function () {
+        ClosePopup();
+        return false;
+    });
+
 })(jQuery);
+
+$(function () {
+    $("a.popup-open").click();
+})
