@@ -2,7 +2,8 @@
     formvalidate.Init('form-send-mywork');
 
     $("input#image").on('change',function () {
-        console.log($(this).val());
+        var fullname = $(this).val();
+        
     })
 
 })
