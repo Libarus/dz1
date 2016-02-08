@@ -29,11 +29,9 @@
     resize: none;
 }
 
-.formblock{
+.form-block,
+.form-item{
     margin-bottom: 18px;
-    background-color: green;
-    margin-left: -200px;
-    margin-right: -200px;
 }
 
 .contacts-name,
@@ -135,14 +133,15 @@
 
 .form-error-label
 {
-    float: right;
-    
-    margin-right: 18px;
-    margin-top: -6px;
+    display: none;
+    float: left;
+    top: -33px;
+    position: relative;
     background-image: url(../images/errtip_02.png);
     background-repeat: repeat-x;
     background-position: -18px 0px;
     height: 29px;
+    margin-bottom: -29px;
 
     /* label */
     padding-top: 4px;
@@ -173,21 +172,24 @@
     margin-left: -8px;
 }
 
-
+.form-item-textarea .form-error-label{
+    top: -105px;
+}
 
 
 
 
 .form-error-label-right
 {
+    display: none;
     float: right;
-    
-    margin-left: 20px;
-    margin-top: -6px;
+    position: relative;
+    top: -35px;
     background-image: url(../images/errtip_02.png);
     background-repeat: repeat-x;
     background-position: -18px 0px;
     height: 29px;
+    margin-bottom: -29px;
 
     /* label */
     padding-top: 4px;
@@ -218,3 +220,32 @@
     margin-top: -4px;
     margin-left: -15px;
 }
+
+
+.form-item-name .form-error-label{
+    left: -100px;
+}
+
+.form-item-name .form-error-label-right{
+    right: -108px;
+}
+
+.form-item-textarea .form-error-label{
+    left: -90px;
+}
+
+.form-item-capcha .form-error-label-right{
+    right: -85px;
+}
+
+
+.form-onerror-label .form-input-item{
+    border-color: #e0ad9a;
+}
+
+.form-onerror-label .form-error-label,
+.form-onerror-label .form-error-label-right{
+    display: block;
+}
+
+

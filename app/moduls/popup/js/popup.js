@@ -37,7 +37,3 @@
     });
 
 })(jQuery);
-
-$(function () {
-    $("a.popup-open").click();
-})

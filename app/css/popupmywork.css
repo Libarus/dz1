@@ -87,6 +87,10 @@
     border-color: #e0ad9a;
 }
 
+.fictiveON{
+    color: black;
+}
+
 .form-error-label{
     display: none;
     float: right;
