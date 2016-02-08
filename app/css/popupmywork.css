@@ -78,13 +78,12 @@
     background-position: center center;
 }
 
-
-
 .form-onerror-label .form-error-label{
     display: block;
 }
 
-.form-onerror-label .form-input-item{
+.form-onerror-label .form-input-item,
+.form-onerror-label .form-input-item-fictiv{
     border-color: #e0ad9a;
 }
 

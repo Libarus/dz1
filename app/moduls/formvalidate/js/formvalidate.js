@@ -19,6 +19,7 @@
             var val = $(this).find(".form-input-item").val();
             if (val == ""){
                 $(this).addClass('form-onerror-label');
+                console.log($(this).attr('id'));
             }
             else{
                 $(this).removeClass('form-onerror-label');
@@ -37,7 +38,6 @@
              *  @param {string} idfe ID формы для валидации
              */
             Init: function(idfe) {
-                console.log(idfe);
                 idFormElement = idfe;
 
                 $("#" + idFormElement).on('submit',function () {
